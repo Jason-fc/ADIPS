@@ -5,6 +5,7 @@
       <el-button type="primary" size="small">重检计算</el-button>
       <el-button type="primary" size="small">导出数据记录</el-button>
     </el-form>
+    <br>
     <el-table v-loading="loading" style="width: 100%;" :header-cell-style="setColor">
       <el-table-column label="适航指令" align="center">
         <el-table-column label="类型" align="center" />

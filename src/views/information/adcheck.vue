@@ -52,12 +52,12 @@
       <!-- <el-table-column type="index" width="50" label="序号">
           <template slot-scope="scope">{{ scope.$index+1+index }}</template>
         </el-table-column> -->
-      <el-table-column label="AD处理单IsLatest" prop="isLatest" align="center" />
+      <el-table-column label="AD处理单IsLatest" prop="isLatest" align="center" min-width="150px" />
 
       <el-table-column label="适航指令AD文档" prop="isLatest" align="center">
         <el-table-column label="来源" prop="from" align="center" />
-        <el-table-column label="适航指令编号" prop="num" align="center" />
-        <el-table-column label="AD文档标题" prop="adnum" align="center" />
+        <el-table-column label="适航指令编号" prop="num" align="center" min-width="120px" />
+        <el-table-column label="AD文档标题" prop="adnum" align="center" min-width="120px" />
         <el-table-column label="颁发日期" prop="date" align="center" />
         <!-- <template slot-scope="scope">
             {{ new Date(scope.row.createTime).format('yyyy-MM-dd hh:mm:ss') }}
@@ -74,19 +74,19 @@
           </template> -->
         </el-table-column>
         <el-table-column label="状态" prop="status" align="center" />
-        <el-table-column label="受影响的机型" align="center" />
-        <el-table-column label="受影响的发动机类型" align="center" />
-        <el-table-column label="受影响的附件" align="center" />
-        <el-table-column label="受影响的APU类型" align="center" />
-        <el-table-column label="受影响的起落架" align="center" />
+        <el-table-column label="受影响的机型" align="center" min-width="120px" />
+        <el-table-column label="受影响的发动机类型" align="center" min-width="150px" />
+        <el-table-column label="受影响的附件" align="center" min-width="120px" />
+        <el-table-column label="受影响的APU类型" align="center" min-width="150px" />
+        <el-table-column label="受影响的起落架" align="center" min-width="120px" />
       </el-table-column>
 
       <el-table-column label="适航指令AD处理单" align="center">
-        <el-table-column label="处理单编号" align="center" />
+        <el-table-column label="处理单编号" align="center" min-width="120px" />
         <el-table-column label="创建时间" align="center" />
         <el-table-column label="用户" align="center" />
         <el-table-column label="ATA章节" align="center" />
-        <el-table-column label="评估截止日期" prop="enddate" align="center">
+        <el-table-column label="评估截止日期" prop="enddate" align="center" min-width="120px">
           <!-- <template slot-scope="scope">
             {{ new Date(scope.row.createTime).format('yyyy-MM-dd hh:mm:ss') }}
           </template> -->
@@ -96,43 +96,43 @@
 
       <el-table-column label="适航指令AD分处理单" align="center">
         <el-table-column label="IsLatest" align="center" />
-        <el-table-column label="分处理单编号" align="center" />
+        <el-table-column label="分处理单编号" align="center" min-width="120px" />
         <el-table-column label="创建时间" align="center" />
         <el-table-column label="状态" align="center" />
       </el-table-column>
 
       <el-table-column label="" align="center">
-        <el-table-column label="AD段落索引" align="center" />
-        <el-table-column label="AD段落号" align="center" />
+        <el-table-column label="AD段落索引" align="center" min-width="120px" />
+        <el-table-column label="AD段落号" align="center" min-width="120px" />
         <el-table-column label="是否适用" align="center" />
-        <el-table-column label="受影响的飞机" align="center" />
-        <el-table-column label="受影响的发动机" align="center" />
-        <el-table-column label="受影响的附件" align="center" />
-        <el-table-column label="受影响的APU" align="center" />
-        <el-table-column label="受影响的起落架" align="center" />
-        <el-table-column label="适航指令要求" align="center" />
+        <el-table-column label="受影响的飞机" align="center" min-width="120px" />
+        <el-table-column label="受影响的发动机" align="center" min-width="120px" />
+        <el-table-column label="受影响的附件" align="center" min-width="120px" />
+        <el-table-column label="受影响的APU" align="center" min-width="120px" />
+        <el-table-column label="受影响的起落架" align="center" min-width="120px" />
+        <el-table-column label="适航指令要求" align="center" min-width="120px" />
         <el-table-column label="评估意见" align="center" />
         <el-table-column label="是否重检" align="center" />
         <el-table-column label="完成期限" align="center" />
-        <el-table-column label="非结构完成期限" align="center" />
+        <el-table-column label="非结构完成期限" align="center" min-width="120px" />
         <el-table-column label="首检时限" align="center" />
-        <el-table-column label="非结构化首检时限" align="center" />
+        <el-table-column label="非结构化首检时限" align="center" min-width="150px" />
         <el-table-column label="重检间隔" align="center" />
-        <el-table-column label="非结构化重检间隔" align="center" />
-        <el-table-column label="终止措施截止期限" align="center" />
-        <el-table-column label="非结构化终止措施截止" align="center" />
+        <el-table-column label="非结构化重检间隔" align="center" min-width="150px" />
+        <el-table-column label="终止措施截止期限" align="center" min-width="150px" />
+        <el-table-column label="非结构化终止措施截止" align="center" min-width="170px" />
         <el-table-column label="评估人" align="center" />
       </el-table-column>
 
       <el-table-column label="com.airchina.tdms.relate.TDMSEFRDocument" align="center">
-        <el-table-column label="工程文件标题" align="center" />
+        <el-table-column label="工程文件标题" align="center" min-width="120px" />
         <el-table-column label="操作类型" align="center" />
-        <el-table-column label="工程文件类型" align="center" />
-        <el-table-column label="工程文件编号" align="center" />
-        <el-table-column label="工程文件状态" align="center" />
-        <el-table-column label="执行结果编号" align="center" />
-        <el-table-column label="执行结果状态" align="center" />
-        <el-table-column label="预计颁发时间" align="center" />
+        <el-table-column label="工程文件类型" align="center" min-width="120px" />
+        <el-table-column label="工程文件编号" align="center" min-width="120px" />
+        <el-table-column label="工程文件状态" align="center" min-width="120px" />
+        <el-table-column label="执行结果编号" align="center" min-width="120px" />
+        <el-table-column label="执行结果状态" align="center" min-width="120px" />
+        <el-table-column label="预计颁发时间" align="center" min-width="120px" />
       </el-table-column>
       <!-- <el-table-column prop="status" label="申请状态">
           <template slot-scope="scope">

@@ -21,8 +21,8 @@
       <!-- <el-table-column type="index" width="50" label="序号">
           <template slot-scope="scope">{{ scope.$index+1+index }}</template>
         </el-table-column> -->
-      <el-table-column label="适航指令编号" align="center" />
-      <el-table-column label="适航指令标题" align="center" />
+      <el-table-column label="适航指令编号" align="center" min-width="120px" />
+      <el-table-column label="适航指令标题" align="center" min-width="120px" />
       <el-table-column label="适用机型" align="center" />
       <el-table-column label="截止日期" align="center" />
       <el-table-column label="颁发日期" align="center" />
@@ -31,11 +31,11 @@
       <el-table-column label="分发日期" align="center" />
       <el-table-column label="反馈截止" align="center" />
       <el-table-column label="评估日期" align="center" />
-      <el-table-column label="工程文件编号" align="center" />
+      <el-table-column label="工程文件编号" align="center" min-width="120px" />
       <el-table-column label="预计下发" align="center" />
       <el-table-column label="下发日期" align="center" />
       <el-table-column label="截止日期" align="center" />
-      <el-table-column label="文件流转状态" align="center" />
+      <el-table-column label="文件流转状态" align="center" min-width="120px" />
     </el-table>
     <el-pagination
       :current-page="currentPage4"

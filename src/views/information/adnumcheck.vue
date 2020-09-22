@@ -52,15 +52,15 @@
         <!-- <el-table-column type="index" width="50" label="序号">
           <template slot-scope="scope">{{ scope.$index+1+index }}</template>
         </el-table-column> -->
-        <el-table-column label="适航指令编号" prop="num" align="center" />
-        <el-table-column label="适航指令标题" prop="adnum" align="center" />
+        <el-table-column label="适航指令编号" prop="num" align="center" min-width="120px" />
+        <el-table-column label="适航指令标题" prop="adnum" align="center" min-width="120px" />
         <el-table-column label="生效日期" prop="date" align="center">
           <!-- <template slot-scope="scope">
             {{ new Date(scope.row.createTime).format('yyyy-MM-dd hh:mm:ss') }}
           </template> -->
         </el-table-column>
-        <el-table-column label="处理单编号" prop="num" align="center" />
-        <el-table-column label="分处理单编号" prop="adnum" align="center" />
+        <el-table-column label="处理单编号" prop="num" align="center" min-width="120px" />
+        <el-table-column label="分处理单编号" prop="adnum" align="center" min-width="120px" />
         <el-table-column label="处理单适用性" prop="adnum" align="center">
           <el-table-column label="飞机型号" prop="num" align="center" />
           <el-table-column label="发动机" prop="num" align="center" />
@@ -70,8 +70,8 @@
         </el-table-column>
         <el-table-column label="段落序号" prop="adnum" align="center" />
         <el-table-column label="段落编号" prop="num" align="center" />
-        <el-table-column label="执行文件编号" prop="num" align="center" />
-        <el-table-column label="执行文件状态" prop="num" align="center" />
+        <el-table-column label="执行文件编号" prop="num" align="center" min-width="120px" />
+        <el-table-column label="执行文件状态" prop="num" align="center" min-width="120px" />
         <el-table-column label="段落适用性" prop="num" align="center">
           <el-table-column label="飞机" prop="num" align="center" />
           <el-table-column label="发动机" prop="num" align="center" />
@@ -79,7 +79,7 @@
           <el-table-column label="APU" prop="num" align="center" />
           <el-table-column label="起落架" prop="num" align="center" />
         </el-table-column>
-        <el-table-column label="参考文件编号" prop="num" align="center" />
+        <el-table-column label="参考文件编号" prop="num" align="center" min-width="120px" />
         <el-table-column label="重检" prop="num" align="center" />
         <!-- <el-table-column prop="status" label="申请状态">
           <template slot-scope="scope">

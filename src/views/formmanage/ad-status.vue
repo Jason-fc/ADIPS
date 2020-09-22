@@ -23,17 +23,17 @@
       <p style="color:red">注意：单机(飞机/发动机)编号，请输入完整编号，作为查询条件</p>
     </el-form>
     <el-table v-loading="loading" style="width: 100%;" :header-cell-style="setColor">
-      <el-table-column label="适航指令编号" align="center" />
-      <el-table-column label="适航指令标题" align="center" />
+      <el-table-column label="适航指令编号" align="center" min-width="120px" />
+      <el-table-column label="适航指令标题" align="center" min-width="120px" />
       <el-table-column label="单机编号" align="center" />
       <el-table-column label="单机状态" align="center" />
       <el-table-column label="生效日期" align="center" />
-      <el-table-column label="处理单编号" align="center" />
-      <el-table-column label="分处理单编号" align="center" />
+      <el-table-column label="处理单编号" align="center" min-width="120px" />
+      <el-table-column label="分处理单编号" align="center" min-width="120px" />
       <el-table-column label="段落序号" align="center" />
       <el-table-column label="段落编号" align="center" />
-      <el-table-column label="执行文件编号" align="center" />
-      <el-table-column label="执行文件状态" align="center" />
+      <el-table-column label="执行文件编号" align="center" min-width="120px" />
+      <el-table-column label="执行文件状态" align="center" min-width="120px" />
       <el-table-column label="段落适用性" align="center">
         <el-table-column label="飞机" align="center" />
         <el-table-column label="发动机" align="center" />

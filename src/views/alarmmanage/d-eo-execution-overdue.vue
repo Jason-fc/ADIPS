@@ -2,7 +2,7 @@
   <div class="chart-container">
     <el-table v-loading="loading" style="width: 100%;" :data="tableData" :header-cell-style="setColor" :row-style="setRowColor">
       <el-table-column label="工程文件编号" align="center" prop="num" />
-      <el-table-column label="工程文件截止日期" align="center" prop="date" />
+      <el-table-column label="工程文件截止日期" align="center" prop="date" min-width="120px" />
       <el-table-column label="AD编号" align="center" prop="adnum" />
       <el-table-column label="AD段落" align="center" prop="num" />
       <el-table-column label="报警状态" align="center" prop="status" />
