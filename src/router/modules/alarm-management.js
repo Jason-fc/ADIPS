@@ -2,7 +2,7 @@
 
 import Layout from '@/layout'
 
-const chartsRouter = {
+const alarmRouter = {
   path: '/alarm-manage',
   component: Layout,
   redirect: 'noRedirect',
@@ -39,4 +39,4 @@ const chartsRouter = {
   ]
 }
 
-export default chartsRouter
+export default alarmRouter

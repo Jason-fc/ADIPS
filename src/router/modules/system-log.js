@@ -2,10 +2,10 @@
 
 import Layout from '@/layout'
 
-const tableRouter = {
+const logRouter = {
   path: '/system-log',
   component: Layout,
-  redirect: '/table/drag-table',
+  redirect: '/system-log/signin-log',
   name: 'Table',
   meta: {
     title: '系统日志',
@@ -14,16 +14,16 @@ const tableRouter = {
   children: [
     {
       path: 'signin-log',
-      component: () => import('@/views/table/signin-log'),
+      component: () => import('@/views/system-log/signin-log'),
       name: 'DragTable',
       meta: { title: '登入日志' }
     },
     {
       path: 'operation-log',
-      component: () => import('@/views/table/operation-log'),
+      component: () => import('@/views/system-log/operation-log'),
       name: 'InlineEditTable',
       meta: { title: '操作日志' }
     }
   ]
 }
-export default tableRouter
+export default logRouter

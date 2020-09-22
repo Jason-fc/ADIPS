@@ -7,9 +7,9 @@ Vue.use(Router)
 import Layout from '@/layout'
 
 /* Router Modules */
-import componentsRouter from './modules/components'
-import chartsRouter from './modules/charts'
-import tableRouter from './modules/table'
+import formRouter from './modules/form-management'
+import alarmRouter from './modules/alarm-management'
+import logRouter from './modules/system-log'
 // import nestedRouter from './modules/nested'
 
 /**
@@ -105,11 +105,11 @@ export const constantRoutes = [
  */
 export const asyncRoutes = [
   {
-    path: '/infomation',
+    path: '/information',
     component: Layout,
-    redirect: '/infomation/ad-num-check',
+    redirect: '/information/ad-num-check',
     alwaysShow: true, // will always show the root menu
-    name: 'Infomation',
+    name: 'Information',
     meta: {
       title: '信息查询',
       icon: 'search',
@@ -118,7 +118,7 @@ export const asyncRoutes = [
     children: [
       {
         path: 'ad-num-check',
-        component: () => import('@/views/infomation/adnumcheck'),
+        component: () => import('@/views/information/adnumcheck'),
         name: 'PagePermission',
         meta: {
           title: 'AD号查询',
@@ -127,7 +127,7 @@ export const asyncRoutes = [
       },
       {
         path: 'eng-file-check',
-        component: () => import('@/views/infomation/engfilecheck'),
+        component: () => import('@/views/information/engfilecheck'),
         name: 'DirectivePermission',
         meta: {
           title: '工程文件查询'
@@ -136,7 +136,7 @@ export const asyncRoutes = [
       },
       {
         path: 'fly-num-check',
-        component: () => import('@/views/infomation/flynumcheck'),
+        component: () => import('@/views/information/flynumcheck'),
         name: 'RolePermission',
         meta: {
           title: '飞机号查询',
@@ -145,7 +145,7 @@ export const asyncRoutes = [
       },
       {
         path: 'ad-recheck',
-        component: () => import('@/views/infomation/adrecheck'),
+        component: () => import('@/views/information/adrecheck'),
         name: 'Adrecheck',
         meta: {
           title: '重检AD查询'
@@ -153,7 +153,7 @@ export const asyncRoutes = [
       },
       {
         path: 'ad-check',
-        component: () => import('@/views/infomation/adcheck'),
+        component: () => import('@/views/information/adcheck'),
         name: 'Adcheck',
         meta: {
           title: 'AD相关查询'
@@ -175,8 +175,8 @@ export const asyncRoutes = [
   // },
 
   /** when your routing map is too long, you can split it into small modules **/
-  componentsRouter,
-  chartsRouter,
+  formRouter,
+  alarmRouter,
   // nestedRouter,
   {
     path: '/recheck-calculation',
@@ -196,7 +196,7 @@ export const asyncRoutes = [
       }
     ]
   },
-  tableRouter,
+  logRouter,
   {
     path: '/system-management',
     component: Layout,

@@ -2,7 +2,7 @@
 
 import Layout from '@/layout'
 
-const componentsRouter = {
+const formRouter = {
   path: '/form-manage',
   component: Layout,
   redirect: 'noRedirect',
@@ -99,4 +99,4 @@ const componentsRouter = {
   ]
 }
 
-export default componentsRouter
+export default formRouter
