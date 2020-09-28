@@ -51,6 +51,22 @@ export default {
         enddate: '2023-12-12',
         overdue: '9',
         alarmstatus: '正常'
+      }, {
+        num: 'A180',
+        date: '2020-12-12',
+        adnum: 'XPS13-A190',
+        status: '评估中',
+        enddate: '2023-12-12',
+        overdue: '5',
+        alarmstatus: '正常'
+      }, {
+        num: 'A180',
+        date: '2020-12-12',
+        adnum: 'XPS13-A190',
+        status: '评估中',
+        enddate: '2023-12-12',
+        overdue: '12',
+        alarmstatus: '正常'
       }
       ]
     }
@@ -61,12 +77,14 @@ export default {
         return { background: 'rgb(221,221,255)', color: '#606266' }
       }
     },
-    setRowColor({ rowIndex }) {
+    setRowColor({ row }) {
     // 此处应根据到期天数的设置不同颜色
-      if (rowIndex === 0) {
+      if (row.overdue < 0) {
         return { background: 'rgb(170,170,170)' }
-      } else if (rowIndex < 3 && rowIndex > 0) {
+      } else if (row.overdue < 7) {
         return { background: 'rgb(255,255,136)' }
+      } else {
+        return { background: 'rgb(220,254,220)' }
       }
     }
   }
