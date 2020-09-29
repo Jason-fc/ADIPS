@@ -27,12 +27,14 @@
           start-placeholder="从"
           end-placeholder="到"
           value-format="yyyy-MM-dd"
+          style="width:300px"
         />
       </el-form-item>
       <el-form-item>
         <el-button type="primary" size="small">查询</el-button>
         <el-button type="primary" size="small">清除</el-button>
         <el-button size="small">导出记录</el-button>
+        <el-button size="small">Excel数据比对</el-button>
       </el-form-item>
     </el-form>
     <el-table

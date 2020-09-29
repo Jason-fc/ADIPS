@@ -178,24 +178,24 @@ export const asyncRoutes = [
   formRouter,
   alarmRouter,
   // nestedRouter,
-  {
-    path: '/recheck-calculation',
-    component: Layout,
-    redirect: '/recheck-cal/recheck-calculator',
-    name: 'Excel',
-    meta: {
-      title: '重检计算',
-      icon: 'edit'
-    },
-    children: [
-      {
-        path: 'recheck-calculator',
-        component: () => import('@/views/recheck-cal/recheck-calculator'),
-        name: 'ExportExcel',
-        meta: { title: '重检计算器' }
-      }
-    ]
-  },
+  // {
+  //   path: '/recheck-calculation',
+  //   component: Layout,
+  //   redirect: '/recheck-cal/recheck-calculator',
+  //   name: 'Excel',
+  //   meta: {
+  //     title: '重检计算',
+  //     icon: 'edit'
+  //   },
+  //   children: [
+  //     {
+  //       path: 'recheck-calculator',
+  //       component: () => import('@/views/recheck-cal/recheck-calculator'),
+  //       name: 'ExportExcel',
+  //       meta: { title: '重检计算器' }
+  //     }
+  //   ]
+  // },
   logRouter,
   {
     path: '/system-management',
